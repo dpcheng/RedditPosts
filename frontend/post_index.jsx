@@ -13,10 +13,10 @@ class PostIndex extends React.Component {
     return Object.keys(posts).map(id => {
       let post = posts[id].data;
       return <Post
-        id={ id }
+        key={ id }
         title={ post.title }
         score={ post.score }
-        link={ post.url }
+        link={ post.permalink }
       />;
   });
   }
@@ -24,6 +24,7 @@ class PostIndex extends React.Component {
   render() {
     return (
       <main>
+        Posts:
         { this.renderPosts.bind(this)() }
       </main>
     );
