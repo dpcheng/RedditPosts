@@ -18,7 +18,7 @@ class PostIndex extends React.Component {
         score={ post.score }
         link={ post.permalink }
       />;
-  });
+    });
   }
 
   render() {
