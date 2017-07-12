@@ -16,7 +16,7 @@ class CommentIndex extends React.Component {
         key={ id }
         body={ comment.body }
         score={ comment.score }
-        link={ comment.permalink }
+        link={ comment.link_permalink + comment.id }
       />;
     });
   }

@@ -5,7 +5,7 @@ const Comment = ({ body, score, link }) => {
     <main>
       <div>Body: { body }</div>
       <div>Score: { score }</div>
-      <a href={`https://www.reddit.com${ link }`}>Link</a>
+      <a href={`${ link }`}>Link</a>
     </main>
   );
 };
